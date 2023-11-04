@@ -1,17 +1,15 @@
 @import "../../../Assets/Sass/Veriables.scss";
 
 .header {
-    width: 1620px;
+    width: 100%;
     height: 110px;
     display: flex;
     align-items: center;
     position: fixed;
     z-index: 999;
-    box-shadow: 1px 1px 3px $blue;
+    box-shadow: 1px 1px 4px $blue;
 
-    &__container {
-        width: 80%;
-        margin: 0 auto;
+    .container {
         display: flex;
         align-items: center;
         justify-content: space-between;
