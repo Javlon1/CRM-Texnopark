@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.scss';
 import Loader from './Components/Ui/Loader/Loader';
@@ -47,9 +47,23 @@ function App() {
   // };
   //
 
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    const getCounteries = async () => {
+      await fetch('https://63c2c490b0c286fbe5f347e9.mockapi.io/users')
+      setLoading(false)
+    }
+    getCounteries()
+  }, [])
+
+  if (loading) {
+    return <Loader />
+  }
+
   return (
     <div className="App">
-      <Header/>
+      <Header />
 
       <Routes>
 
@@ -57,7 +71,7 @@ function App() {
         <Route path='/' element={<Home />} />
 
       </Routes>
-      
+
       <div onClick={top} className={scrol ? "scroll-up active" : "scroll-up"}>
         <svg className='scroll-up__svg' viewBox='-2 -2 52 52'>
           <path className='scroll-up__svg__path'
