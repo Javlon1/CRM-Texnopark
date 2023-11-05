@@ -1,0 +1,14 @@
+@import '../../../../Assets/Sass/Veriables.scss';
+
+.language {
+    .select {
+        appearance: none;
+        padding: .35rem 1.4rem;
+        border: 1px solid $blue;
+        cursor: pointer;
+        color: $blue;
+        border-radius: $radius;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+}

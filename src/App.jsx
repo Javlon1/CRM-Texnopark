@@ -4,7 +4,7 @@ import './App.scss';
 import Loader from './Components/Ui/Loader/Loader';
 import NotFound from './Components/Ui/404/404.jsx';
 import Home from './Pages/Home/Home';
-import LeftBar from './Components/layout/LeftBar/LeftBar';
+import Header from './Components/layout/Header/Header';
 
 function App() {
 
@@ -49,13 +49,15 @@ function App() {
 
   return (
     <div className="App">
-      <LeftBar />
+      <Header/>
+
       <Routes>
 
-        {/* <Route path='*' element={<NotFound />} /> */}
+        <Route path='*' element={<NotFound />} />
         <Route path='/' element={<Home />} />
 
       </Routes>
+      
       <div onClick={top} className={scrol ? "scroll-up active" : "scroll-up"}>
         <svg className='scroll-up__svg' viewBox='-2 -2 52 52'>
           <path className='scroll-up__svg__path'
