@@ -68,12 +68,13 @@
                                     weight: 600;
                                 }
                             }
+
                             border-radius: $radius;
 
                             &:nth-child(1) {
                                 border-radius: $radius $radius 0 0;
                             }
-                            
+
                             &:last-child {
                                 border-radius: 0 0 $radius 0;
                             }
@@ -97,7 +98,6 @@
             align-items: center;
             justify-content: space-between;
             margin: 0 auto;
-            border: 1px solid red;
 
             &__right {
                 width: 370px;
@@ -112,13 +112,14 @@
                     font-size: 1.6rem;
                     font-weight: 500;
                 }
-                &__notification{
+
+                &__notification {
                     position: relative;
 
-                    &__list{
+                    &__list {
                         position: absolute;
                         z-index: 999;
-                        width: 350px;
+                        width: 370px;
                         height: 50vh;
                         display: block;
                         text-align: center;
@@ -126,12 +127,30 @@
                         transform: translateX(155%);
                         transition: $transition;
                         background-color: $white;
+
+                        &__btn {
+                            position: absolute;
+                            color: $blue;
+                            left: 10px;
+                            top: 10px;
+                            cursor: pointer;
+                            border: transparent;
+                            background-color: transparent;
+
+                            i {
+                                font-size: 1.5rem;
+                                padding: 0 .3rem;
+                                &::before {
+                                    font-weight: 700 !important;
+                                }
+                            }
+                        }
                     }
                 }
             }
         }
     }
-    
+
 }
 
 .active {
@@ -187,7 +206,7 @@
 
 }
 
-.act-noti{
-    transform: translateX(50%) !important;
+.act-noti {
+    transform: translateX(40%) !important;
     box-shadow: -1px 2px 4px $blue;
 }

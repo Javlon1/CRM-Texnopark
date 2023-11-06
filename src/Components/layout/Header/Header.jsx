@@ -85,6 +85,13 @@ export default function Header() {
                                 <i className="bi bi-bell-fill"></i>
                             </button>
                             <ul className={notification ? "header__topbar__container__right__notification__list act-noti" : "header__topbar__container__right__notification__list"}>
+                                <div className='header__topbar__container__right__notification__list__btn'
+                                    onClick={() => {
+                                        setNotification(false)
+                                    }}
+                                >
+                                    <i className="bi bi-x-lg"></i>
+                                </div>
                                 <li className="header__topbar__container__right__notification__list__item">
                                     <h1>notification</h1>
                                 </li>
