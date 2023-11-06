@@ -31,16 +31,16 @@ export const HeaderData = [
         nav_ru: 'Финансы',
         nav_en: 'Finance',
         icon: "bi bi-credit-card-fill",
-        dropdown:[
+        dropdown: [
             {
-                id:1,
+                id: 1,
                 link: "/finance",
                 nav_uz: "To‘lovlar",
                 nav_ru: 'Платежи',
                 nav_en: 'Payments',
             },
             {
-                id:2,
+                id: 2,
                 link: "/expense",
                 nav_uz: 'Harajatlar',
                 nav_ru: 'Затраты',
@@ -118,3 +118,22 @@ export const rateData = [
         uzs: "12271,82",
     }
 ]
+
+
+export const chartsData = [
+    {
+        id: 1,
+        title_uz: "Umumiy aylanma",
+        title_ru: "Общий оборот",
+        title_en: "Total turnover",
+        text_uz: "",
+        text_ru: "",
+        text_en: "",
+        date:[
+            {
+                id:1,
+            }
+        ]
+    },
+]
+

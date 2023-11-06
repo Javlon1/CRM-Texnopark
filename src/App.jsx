@@ -71,17 +71,7 @@ function App() {
         <Route path='/' element={<Statistic />} />
 
       </Routes>
-
-      <div onClick={top} className={scrol ? "scroll-up active" : "scroll-up"}>
-        <svg className='scroll-up__svg' viewBox='-2 -2 52 52'>
-          <path className='scroll-up__svg__path'
-            d='
-              M24,0
-              a24,24, 0 0,1 0, 48
-              a24,24, 0 0,1 0, -48
-            '/>
-        </svg>
-      </div>
+      
     </div>
   );
 }
