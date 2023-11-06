@@ -1,0 +1,27 @@
+@import '../../../../Assets/Sass/Veriables.scss';
+
+.intro {
+    width: 100%;
+    display: flex;
+
+    &__left {
+        width: 300px;
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+        border: 1px solid red;
+
+        &__container {
+            border: 1px solid red;
+            width: 85%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0 auto;
+        }
+    }
+
+}

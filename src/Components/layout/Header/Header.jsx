@@ -4,10 +4,10 @@ import { Context } from '../../../Context/Context'
 import { HeaderData, NotificationData, rateData } from '../../../Data/Data'
 import logo from "../../../Assets/Img/logo.png"
 import Language from './Language/Language'
-import './Header.scss'
 import Btn from '../../Ui/Btn/Btn'
 import usd from "../../../Assets/Img/usd.png"
 import uzs from "../../../Assets/Img/uzs.png"
+import './Header.scss'
 
 export default function Header() {
 
@@ -75,8 +75,8 @@ export default function Header() {
             <div className="header__topbar">
                 <div className="header__topbar__container">
                     {
-                        rateData?.map((e) => (
-                            <div key={e.id} className="header__topbar__container__rate">
+                        rateData?.map((e,i) => (
+                            <div key={i} className="header__topbar__container__rate">
                                 <div className="header__topbar__container__rate__items">
                                     <b>{e.usd}</b>
                                     <span>

@@ -3,8 +3,8 @@ import { Route, Routes } from 'react-router-dom';
 import './App.scss';
 import Loader from './Components/Ui/Loader/Loader';
 import NotFound from './Components/Ui/404/404.jsx';
-import Home from './Pages/Home/Home';
 import Header from './Components/layout/Header/Header';
+import Statistic from './Pages/Statistic/Statistic';
 
 function App() {
 
@@ -68,7 +68,7 @@ function App() {
       <Routes>
 
         <Route path='*' element={<NotFound />} />
-        <Route path='/' element={<Home />} />
+        <Route path='/' element={<Statistic />} />
 
       </Routes>
 
