@@ -5,11 +5,14 @@ import { HeaderData } from '../../../Data/Data'
 import logo from "../../../Assets/Img/logo.png"
 import Language from './Language/Language'
 import './Header.scss'
+import Btn from '../../Ui/Btn/Btn'
 
 
 export default function Header() {
 
     const { lan, menu, setMenu } = React.useContext(Context)
+    const [drop, setDrop] = React.useState(1)
+    const [notification, setNotification] = React.useState(false)
     const [headerData] = React.useState(HeaderData)
     const [open, setOpen] = React.useState(false)
 
@@ -47,7 +50,11 @@ export default function Header() {
                                         <ul className={e.dropdown && open ? ' dropdown open__menu' : 'dropdown'}>
                                             {
                                                 e.dropdown?.map((i) => (
-                                                    <li className='dropdown__item' key={i.id}>
+                                                    <li className={drop === i.id ? 'dropdown__item act-drop' : 'dropdown__item'}
+                                                        key={i.id}
+                                                        onClick={() => {
+                                                            setDrop(i.id)
+                                                        }}>
                                                         <Link to={i.link}>
                                                             {i[`nav_${lan}`]}
                                                         </Link>
@@ -64,15 +71,30 @@ export default function Header() {
             </div>
 
             <div className="header__topbar">
-                <div className="container">
-                    <div className="container__left">
+                <div className="header__topbar__container">
+                    <div className="header__topbar__container__left">
                         <h1>left</h1>
                     </div>
-                    <div className="container__right">
-                        <button className='container__right__icon'><i className="bi bi-bell-fill"></i></button>
-                        <button className='container__right__icon'><i className="bi bi-person-fill"></i></button>
+                    <div className="header__topbar__container__right">
+                        <div className='header__topbar__container__right__notification'>
+                            <button className='header__topbar__container__right__icon'
+                                onClick={() => {
+                                    setNotification(!notification)
+                                }}
+                            >
+                                <i className="bi bi-bell-fill"></i>
+                            </button>
+                            <ul className={notification ? "header__topbar__container__right__notification__list act-noti" : "header__topbar__container__right__notification__list"}>
+                                <li className="header__topbar__container__right__notification__list__item">
+                                    <h1>notification</h1>
+                                </li>
+                            </ul>
+                        </div>
+                        <Link to="/profil" className='header__topbar__container__right__icon'>
+                            <i className="bi bi-person-fill"></i>
+                        </Link>
                         <Language />
-                        <button className='container__right__btn'>+ To‘lov qo‘shish</button>
+                        <Btn text='+ To‘lov qo‘shish' />
                     </div>
                 </div>
             </div>

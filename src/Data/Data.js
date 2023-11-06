@@ -34,7 +34,7 @@ export const HeaderData = [
         dropdown:[
             {
                 id:1,
-                link: "/payment",
+                link: "/finance",
                 nav_uz: "To‘lovlar",
                 nav_ru: 'Платежи',
                 nav_en: 'Payments',

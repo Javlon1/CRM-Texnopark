@@ -2,10 +2,9 @@
 
 .header {
     width: 100%;
+    display: flex;
     position: fixed;
     z-index: 999;
-    display: flex;
-    box-shadow: 1px 1px 4px $blue;
 
     &__leftbar {
         width: 300px;
@@ -21,7 +20,7 @@
 
             &__list {
                 margin-top: 5rem;
-                height: 650px;
+                height: 500px;
                 display: flex;
                 justify-content: space-between;
                 flex-direction: column;
@@ -50,8 +49,8 @@
                         position: absolute;
                         top: -38px;
                         right: 0;
-                        height: 135px;
                         transition: 1s all ease;
+                        box-shadow: 1px 1px 4px $blue;
 
                         &__item {
 
@@ -69,6 +68,15 @@
                                     weight: 600;
                                 }
                             }
+                            border-radius: $radius;
+
+                            &:nth-child(1) {
+                                border-radius: $radius $radius 0 0;
+                            }
+                            
+                            &:last-child {
+                                border-radius: 0 0 $radius 0;
+                            }
                         }
                     }
                 }
@@ -79,14 +87,17 @@
     &__topbar {
         display: flex;
         align-items: center;
-        flex: 1;
+        flex-grow: 1;
         height: 110px;
         box-shadow: 1px 1px 4px $blue;
 
-        .container {
+        &__container {
+            width: 85%;
             display: flex;
             align-items: center;
             justify-content: space-between;
+            margin: 0 auto;
+            border: 1px solid red;
 
             &__right {
                 width: 370px;
@@ -101,19 +112,26 @@
                     font-size: 1.6rem;
                     font-weight: 500;
                 }
+                &__notification{
+                    position: relative;
 
-                &__btn {
-                    border: none;
-                    background-color: $blue;
-                    padding: .5rem 1rem;
-                    border-radius: $radius;
-                    color: $white;
-                    font-size: 1.2rem;
-                    font-weight: 500;
+                    &__list{
+                        position: absolute;
+                        z-index: 999;
+                        width: 350px;
+                        height: 50vh;
+                        display: block;
+                        text-align: center;
+                        top: 4.7rem;
+                        transform: translateX(155%);
+                        transition: $transition;
+                        background-color: $white;
+                    }
                 }
             }
         }
     }
+    
 }
 
 .active {
@@ -150,12 +168,26 @@
 
 .open__menu {
     width: 200px !important;
-    background-color: $blue !important;
     box-shadow: 0px 0px 8px $blue;
     border-radius: $radius $radius $radius 0;
     right: -200px !important;
 
     a {
+        color: $blue !important;
+    }
+}
+
+.act-drop {
+    background-color: $blue !important;
+    transition: $transition;
+
+    a {
         color: $white !important;
     }
+
+}
+
+.act-noti{
+    transform: translateX(50%) !important;
+    box-shadow: -1px 2px 4px $blue;
 }
