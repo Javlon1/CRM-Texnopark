@@ -93,14 +93,28 @@ export const Lang = [
 export const NotificationData = [
     {
         id: 1,
-        text_zu: "gfgfgf",
+        title_uz: "To'lov - Husanboy Zafarov",
+        title_ru: "взцйхвй",
+        title_en: "wuqidw",
+        text_uz: "Husanboy Zafarov 250 000 so'n to'lov qildi, to'liq ma'lumotlarni korish uchun meni bosing",
         text_ru: "равыаы",
         text_en: "gfgfgf",
     },
     {
         id: 2,
-        text_zu: "gfgfgf",
+        title_uz: "Maxsulot - Sement 600",
+        title_ru: "взцйхвй",
+        title_en: "wuqidw",
+        text_uz: "Yangi Sement 600 maxsuloti qoshildi, narxlarni o'rnatish uchun shu yerga bosing",
         text_ru: "равыаы",
         text_en: "gfgfgf",
     },
+]
+
+
+export const rateData = [
+    {
+        usd: "1",
+        uzs: "12271,82",
+    }
 ]

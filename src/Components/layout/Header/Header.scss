@@ -99,6 +99,41 @@
             justify-content: space-between;
             margin: 0 auto;
 
+            &__rate{
+                display: flex;
+                align-items: center;
+                .arrow{
+                    margin: 0 .5rem;
+                    i{
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                    }
+                }
+                &__items{
+                    background-color: #eee;
+                    display: flex;
+                    align-items: center;
+                    border-radius: 1rem;
+                    border: 1px solid $blue;
+                    b{
+                        width: 9rem;
+                        padding: 0;
+                        margin: 0;
+                        font-size: 1.5rem;
+                        text-align: end;
+                        padding: 0 .5rem;
+                    }
+                    span{
+                        height: 40px;
+                        width: 3rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-left: 1px solid $blue;
+                    }
+                }
+            }
+
             &__right {
                 width: 370px;
                 display: flex;
@@ -111,6 +146,22 @@
                     color: $blue;
                     font-size: 1.6rem;
                     font-weight: 500;
+                    position: relative;
+
+                    &__counter {
+                        position: absolute;
+                        width: 1rem;
+                        height: 1rem;
+                        top: .5rem;
+                        left: .7rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: $white;
+                        background-color: red;
+                        border-radius: 100%;
+                        font-size: .8rem;
+                    }
 
                     &:hover {
                         color: $blue;
@@ -129,37 +180,77 @@
                         transform: translateX(155%);
                         transition: $transition;
                         border-radius: 0 0 0 $radius;
-                        padding-top: 50px;
                         display: flex;
                         align-items: center;
                         flex-direction: column;
 
-                        &__item {
-                            background-color: $white;
-                            border-radius: $radius;
-                            width: 90%;
-                        }
+                        &__info {
+                            margin-top: 50px;
+                            width: 85%;
+                            height: 420px;
+                            overflow-y: scroll;
+                            border: 1px solid $blue;
+                            border-radius: 0 0 1rem 1rem;
+                            padding: 0 .5rem;
 
+                            &__item {
+                                margin-top: .5rem;
+                                border-bottom: 1px solid $blue;
 
-                        &__btn {
-                            position: absolute;
-                            color: $blue;
-                            left: 10px;
-                            top: 10px;
-                            cursor: pointer;
-                            border: transparent;
-                            background-color: transparent;
-                            background-color: $white;
-                            border-radius: $radius;
+                                .cmc {
+                                    display: flex;
+                                    align-items: center;
 
-                            i {
-                                font-size: 1.5rem;
-                                padding: 0 .4rem;
+                                    &__b {
+                                        font: {
+                                            size: 1.5rem;
+                                            weight: 500;
+                                        }
+                                    }
 
-                                &::before {
-                                    font-weight: 700 !important;
+                                    &__span {
+                                        padding: .5rem;
+
+                                        &__title {
+                                            margin: 0;
+                                            color: $blue;
+                                            font-size: 1.1rem;
+                                        }
+
+                                        &__text {
+                                            padding: 0;
+                                            margin: 0;
+                                            font-size: .8rem;
+                                        }
+                                    }
                                 }
                             }
+                        }
+
+                        &__btn {
+                            position: fixed;
+                            top: 0;
+                            z-index: 99;
+                            width: 100%;
+                            height: 50px;
+                            box-shadow: 1px 1px 4px $blue;
+                            display: flex;
+                            align-items: center;
+
+                            span {
+                                cursor: pointer;
+                                margin-left: .5rem;
+
+                                i {
+                                    font-size: 1.5rem;
+                                    padding: 0 .4rem;
+
+                                    &::before {
+                                        font-weight: 700 !important;
+                                    }
+                                }
+                            }
+
                         }
                     }
                 }
