@@ -111,6 +111,10 @@
                     color: $blue;
                     font-size: 1.6rem;
                     font-weight: 500;
+
+                    &:hover {
+                        color: $blue;
+                    }
                 }
 
                 &__notification {
@@ -120,13 +124,22 @@
                         position: absolute;
                         z-index: 999;
                         width: 370px;
-                        height: 50vh;
-                        display: block;
-                        text-align: center;
+                        height: 500px;
                         top: 4.7rem;
                         transform: translateX(155%);
                         transition: $transition;
-                        background-color: $white;
+                        border-radius: 0 0 0 $radius;
+                        padding-top: 50px;
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+
+                        &__item {
+                            background-color: $white;
+                            border-radius: $radius;
+                            width: 90%;
+                        }
+
 
                         &__btn {
                             position: absolute;
@@ -136,10 +149,13 @@
                             cursor: pointer;
                             border: transparent;
                             background-color: transparent;
+                            background-color: $white;
+                            border-radius: $radius;
 
                             i {
                                 font-size: 1.5rem;
-                                padding: 0 .3rem;
+                                padding: 0 .4rem;
+
                                 &::before {
                                     font-weight: 700 !important;
                                 }
@@ -207,6 +223,6 @@
 }
 
 .act-noti {
-    transform: translateX(40%) !important;
+    transform: translateX(35%) !important;
     box-shadow: -1px 2px 4px $blue;
 }

@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Link } from 'react-router-dom'
 import { Context } from '../../../Context/Context'
-import { HeaderData } from '../../../Data/Data'
+import { HeaderData, NotificationData } from '../../../Data/Data'
 import logo from "../../../Assets/Img/logo.png"
 import Language from './Language/Language'
 import './Header.scss'
@@ -14,6 +14,7 @@ export default function Header() {
     const [drop, setDrop] = React.useState(1)
     const [notification, setNotification] = React.useState(false)
     const [headerData] = React.useState(HeaderData)
+    const [notificationData] = React.useState(NotificationData)
     const [open, setOpen] = React.useState(false)
 
     setMenu(headerData[menu - 1].id)
@@ -92,9 +93,16 @@ export default function Header() {
                                 >
                                     <i className="bi bi-x-lg"></i>
                                 </div>
-                                <li className="header__topbar__container__right__notification__list__item">
-                                    <h1>notification</h1>
-                                </li>
+                                {
+                                    notificationData?.map((e,i) => (
+                                        <li key={i} className="header__topbar__container__right__notification__list__item">
+                                            <h1>
+                                                {i+1}
+                                                {e[`text_${lan}`]}
+                                            </h1>
+                                        </li>
+                                    ))
+                                }
                             </ul>
                         </div>
                         <Link to="/profil" className='header__topbar__container__right__icon'>

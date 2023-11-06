@@ -88,3 +88,19 @@ export const Lang = [
         lang: 'en'
     },
 ]
+
+
+export const NotificationData = [
+    {
+        id: 1,
+        text_zu: "gfgfgf",
+        text_ru: "равыаы",
+        text_en: "gfgfgf",
+    },
+    {
+        id: 2,
+        text_zu: "gfgfgf",
+        text_ru: "равыаы",
+        text_en: "gfgfgf",
+    },
+]
