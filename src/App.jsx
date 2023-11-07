@@ -5,6 +5,7 @@ import Loader from './Components/Ui/Loader/Loader';
 import NotFound from './Components/Ui/404/404.jsx';
 import Statistic from './Pages/Statistic/Statistic';
 import LeftBar from './Components/layout/LeftBar/LeftBar';
+import Lid from './Components/Page/Lids/Lids';
 
 function App() {
 
@@ -67,8 +68,9 @@ function App() {
 
       <Routes>
 
-        {/* <Route path='*' element={<NotFound />} /> */}
+        <Route path='*' element={<NotFound />} />
         <Route path='/' element={<Statistic />} />
+        <Route path='/lid' element={<Lid />} />
 
       </Routes>
       

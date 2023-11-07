@@ -127,8 +127,8 @@ export const chartsData = [
         title_ru: "Общий оборот",
         title_en: "Total turnover",
         text_uz: "Oxirgi 30 kunlik",
-        text_ru: "",
-        text_en: "",
+        text_ru: "щлзщлвй взщйцвлйв звйщцлй",
+        text_en: "diqwud  dqwduqb  dqwuid",
         dan:[
             {
                 id:0,
@@ -138,6 +138,10 @@ export const chartsData = [
                 id:1,
                 date:2,
             },
+            {
+                id:2,
+                date:3
+            }
         ],
         gacha:[
             {
@@ -148,37 +152,41 @@ export const chartsData = [
                 id:1,
                 date:21,
             },
+            {
+                id:2,
+                date:22
+            }
         ],
         product: [
             {
                 id:1,
                 name_uz:"shim",
-                name_ru:"",
-                name_en:"",
+                name_ru:"ововов вовов",
+                name_en:"dhhdd ddhdd jd",
                 value: 712,
                 color:"#5754E0"
             },
             {
                 id:2,
                 name_uz:"shim",
-                name_ru:"",
-                name_en:"",
+                name_ru:"ововов вовов",
+                name_en:"dhhdd ddhdd jd",
                 value: 512,
                 color:"#623EB9"
             },
             {
                 id:3,
                 name_uz:"shim",
-                name_ru:"",
-                name_en:"",
+                name_ru:"ововов вовов",
+                name_en:"dhhdd ddhdd jd",
                 value: 812,
                 color:"#1A1E52"
             },
             {
                 id:4,
                 name_uz:"shim",
-                name_ru:"",
-                name_en:"",
+                name_ru:"ововов вовов",
+                name_en:"dhhdd ddhdd jd",
                 value: 412,
                 color:"#BF88E2"
             },
@@ -190,8 +198,8 @@ export const chartsData = [
         title_ru: "Общий оборот",
         title_en: "Total turnover",
         text_uz: "Oxirgi 30 kunlik",
-        text_ru: "",
-        text_en: "",
+        text_ru: "щлзщлвй взщйцвлйв звйщцлй",
+        text_en: "diqwud  dqwduqb  dqwuid",
         dan:[
             {
                 id:0,
@@ -209,39 +217,43 @@ export const chartsData = [
             },
             {
                 id:1,
-                date:21,
+                date:31,
             },
+            {
+                id:2,
+                date:21
+            }
         ],
         product: [
             {
                 id:1,
                 name_uz:"shim",
-                name_ru:"",
-                name_en:"",
+                name_ru:"ововов вовов",
+                name_en:"dhhdd ddhdd jd",
                 value: 712,
                 color:"#5754E0"
             },
             {
                 id:2,
                 name_uz:"shim",
-                name_ru:"",
-                name_en:"",
+                name_ru:"ововов вовов",
+                name_en:"dhhdd ddhdd jd",
                 value: 512,
                 color:"#623EB9"
             },
             {
                 id:3,
                 name_uz:"shim",
-                name_ru:"",
-                name_en:"",
+                name_ru:"ововов вовов",
+                name_en:"dhhdd ddhdd jd",
                 value: 812,
                 color:"#1A1E52"
             },
             {
                 id:4,
                 name_uz:"shim",
-                name_ru:"",
-                name_en:"",
+                name_ru:"ововов вовов",
+                name_en:"dhhdd ddhdd jd",
                 value: 412,
                 color:"#BF88E2"
             },
@@ -253,8 +265,8 @@ export const chartsData = [
         title_ru: "Общий оборот",
         title_en: "Total turnover",
         text_uz: "Oxirgi 30 kunlik",
-        text_ru: "",
-        text_en: "",
+        text_ru: "щлзщлвй взщйцвлйв звйщцлй",
+        text_en: "diqwud  dqwduqb  dqwuid",
         dan:[
             {
                 id:0,
@@ -272,39 +284,43 @@ export const chartsData = [
             },
             {
                 id:1,
-                date:21,
+                date:12,
             },
+            {
+                id:2,
+                date:28
+            }
         ],
         product: [
             {
                 id:1,
                 name_uz:"shim",
-                name_ru:"",
-                name_en:"",
+                name_ru:"ововов вовов",
+                name_en:"dhhdd ddhdd jd",
                 value: 712,
                 color:"#5754E0"
             },
             {
                 id:2,
                 name_uz:"shim",
-                name_ru:"",
-                name_en:"",
+                name_ru:"ововов вовов",
+                name_en:"dhhdd ddhdd jd",
                 value: 512,
                 color:"#623EB9"
             },
             {
                 id:3,
                 name_uz:"shim",
-                name_ru:"",
-                name_en:"",
+                name_ru:"ововов вовов",
+                name_en:"dhhdd ddhdd jd",
                 value: 812,
                 color:"#1A1E52"
             },
             {
                 id:4,
                 name_uz:"shim",
-                name_ru:"",
-                name_en:"",
+                name_ru:"ововов вовов",
+                name_en:"dhhdd ddhdd jd",
                 value: 412,
                 color:"#BF88E2"
             },
@@ -316,8 +332,8 @@ export const chartsData = [
         title_ru: "Общий оборот",
         title_en: "Total turnover",
         text_uz: "Oxirgi 30 kunlik",
-        text_ru: "",
-        text_en: "",
+        text_ru: "щлзщлвй взщйцвлйв звйщцлй",
+        text_en: "diqwud  dqwduqb  dqwuid",
         dan:[
             {
                 id:0,
@@ -342,95 +358,32 @@ export const chartsData = [
             {
                 id:1,
                 name_uz:"shim",
-                name_ru:"",
-                name_en:"",
+                name_ru:"ововов вовов",
+                name_en:"dhhdd ddhdd jd",
                 value: 712,
                 color:"#5754E0"
             },
             {
                 id:2,
                 name_uz:"shim",
-                name_ru:"",
-                name_en:"",
+                name_ru:"ововов вовов",
+                name_en:"dhhdd ddhdd jd",
                 value: 512,
                 color:"#623EB9"
             },
             {
                 id:3,
                 name_uz:"shim",
-                name_ru:"",
-                name_en:"",
+                name_ru:"ововов вовов",
+                name_en:"dhhdd ddhdd jd",
                 value: 812,
                 color:"#1A1E52"
             },
             {
                 id:4,
                 name_uz:"shim",
-                name_ru:"",
-                name_en:"",
-                value: 412,
-                color:"#BF88E2"
-            },
-        ]
-    },
-    {
-        id: 1,
-        title_uz: "Umumiy aylanma",
-        title_ru: "Общий оборот",
-        title_en: "Total turnover",
-        text_uz: "Oxirgi 30 kunlik",
-        text_ru: "",
-        text_en: "",
-        dan:[
-            {
-                id:0,
-                date:"dan",
-            },
-            {
-                id:1,
-                date:2,
-            },
-        ],
-        gacha:[
-            {
-                id:0,
-                date:"gacha",
-            },
-            {
-                id:1,
-                date:21,
-            },
-        ],
-        product: [
-            {
-                id:1,
-                name_uz:"shim",
-                name_ru:"",
-                name_en:"",
-                value: 712,
-                color:"#5754E0"
-            },
-            {
-                id:2,
-                name_uz:"shim",
-                name_ru:"",
-                name_en:"",
-                value: 512,
-                color:"#623EB9"
-            },
-            {
-                id:3,
-                name_uz:"shim",
-                name_ru:"",
-                name_en:"",
-                value: 812,
-                color:"#1A1E52"
-            },
-            {
-                id:4,
-                name_uz:"shim",
-                name_ru:"",
-                name_en:"",
+                name_ru:"ововов вовов",
+                name_en:"dhhdd ddhdd jd",
                 value: 412,
                 color:"#BF88E2"
             },
