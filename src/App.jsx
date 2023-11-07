@@ -8,26 +8,6 @@ import LeftBar from './Components/layout/LeftBar/LeftBar';
 import Lid from './Components/Page/Lids/Lids';
 
 function App() {
-
-  const [scrol, setScrol] = useState(false)
-  const offSet = 100;
-  const getTop = () => window.pageYOffset || document.documentElement.scrollTop;
-
-  window.addEventListener('scroll', () => {
-    if (getTop() > offSet) {
-      setScrol(true)
-    } else {
-      setScrol(false)
-    }
-  })
-
-  const top = () => {
-    window.scroll({
-      top: 0,
-      behavior: 'smooth'
-    });
-  };
-
   // 
   // document.addEventListener('contextmenu', (e) => {
   //   e.preventDefault();
@@ -73,7 +53,7 @@ function App() {
         <Route path='/lid' element={<Lid />} />
 
       </Routes>
-      
+
     </div>
   );
 }
