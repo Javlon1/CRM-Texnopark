@@ -1,16 +1,16 @@
 @import '../../../../Assets/Sass/Veriables.scss';
- 
+
 .intro {
-    padding-top: 110px;
     width: 100%;
     display: flex;
-    height: 100vh;
 
     &__left {
         width: 300px;
     }
 
     &__right {
+        min-height: 100vh;
+        padding-top: 110px;
         display: flex;
         flex-grow: 1;
 
@@ -20,16 +20,84 @@
             margin: 0 auto;
             flex-wrap: wrap;
             justify-content: space-between;
-            
+
             &__items {
                 margin-top: 30px;
                 width: 49%;
-                height: 300px;
+                height: 390px;
                 border-radius: $radius;
                 box-shadow: 1px 1px 4px $blue;
+                background-color: $white;
                 padding: 1rem;
+
+                &__title {
+                    color: $black;
+                    font-weight: 700;
+                }
+
+                &__text {
+                    color: $blue;
+                    font-weight: 500;
+                    padding: .4rem 0;
+                }
+
+                &__date {
+                    width: 200px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: .1rem 0 1rem 0;
+
+                    .select {
+                        display: flex;
+                        align-items: center;
+
+                        select {
+                            appearance: none;
+                            padding: .2rem 1.4rem;
+                            border: 1px solid $blue;
+                            cursor: pointer;
+                            color: $blue;
+                            border-radius: $radius;
+                            font-size: 1.2rem;
+                            font-weight: 500;
+                        }
+                    }
+                }
+
+                &__chart {
+                    display: flex;
+
+                    .piechart {
+                        box-shadow: 0px 0px 4px $blue;
+                        border-radius: 100%;
+                    }
+
+                    .list {
+                        margin: 1rem 0 0 2rem;
+
+                        &__item {
+                            display: flex;
+                            align-items: center;
+
+                            p {
+                                margin: 0;
+                                padding: 0;
+                                width: .5rem;
+                                height: .5rem;
+                                border-radius: 100%;
+                                margin-right: .7rem;
+                            }
+
+                            &__text {
+                                color: $black;
+                                font-size: 1rem;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
-
 }

@@ -3,8 +3,8 @@ import { Route, Routes } from 'react-router-dom';
 import './App.scss';
 import Loader from './Components/Ui/Loader/Loader';
 import NotFound from './Components/Ui/404/404.jsx';
-import Header from './Components/layout/Header/Header';
 import Statistic from './Pages/Statistic/Statistic';
+import LeftBar from './Components/layout/LeftBar/LeftBar';
 
 function App() {
 
@@ -63,11 +63,11 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+      <LeftBar />
 
       <Routes>
 
-        <Route path='*' element={<NotFound />} />
+        {/* <Route path='*' element={<NotFound />} /> */}
         <Route path='/' element={<Statistic />} />
 
       </Routes>
