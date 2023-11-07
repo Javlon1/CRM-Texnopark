@@ -9,13 +9,13 @@
     }
 
     &__right {
-        min-height: 100vh;
         padding-top: 110px;
         display: flex;
         flex-grow: 1;
+        padding-bottom: 1rem;
 
         &__container {
-            width: 85%;
+            width: 95%;
             display: flex;
             margin: 0 auto;
             flex-wrap: wrap;
