@@ -160,43 +160,35 @@ export const chartsData = [
         product: [
             {
                 id:1,
-                name_uz:"shim",
+                name_uz:"Schet raqamiga tushgan tushum",
                 name_ru:"ововов вовов",
                 name_en:"dhhdd ddhdd jd",
-                value: 712,
+                value: 112,
                 color:"#5754E0"
             },
             {
                 id:2,
-                name_uz:"shim",
+                name_uz:"Qarzdorlarning soni",
                 name_ru:"ововов вовов",
                 name_en:"dhhdd ddhdd jd",
-                value: 512,
+                value: 312,
                 color:"#623EB9"
             },
             {
                 id:3,
-                name_uz:"shim",
+                name_uz:"Naqd olingan pullar",
                 name_ru:"ововов вовов",
                 name_en:"dhhdd ddhdd jd",
-                value: 812,
+                value: 212,
                 color:"#1A1E52"
-            },
-            {
-                id:4,
-                name_uz:"shim",
-                name_ru:"ововов вовов",
-                name_en:"dhhdd ddhdd jd",
-                value: 412,
-                color:"#BF88E2"
             },
         ]
     },
     {
-        id: 1,
-        title_uz: "Umumiy aylanma",
-        title_ru: "Общий оборот",
-        title_en: "Total turnover",
+        id: 2,
+        title_uz: "Tovar aylanmasi",
+        title_ru: "Оборот товаров",
+        title_en: "Ashi turnover",
         text_uz: "Oxirgi 30 kunlik",
         text_ru: "щлзщлвй взщйцвлйв звйщцлй",
         text_en: "diqwud  dqwduqb  dqwuid",
@@ -230,38 +222,38 @@ export const chartsData = [
                 name_uz:"shim",
                 name_ru:"ововов вовов",
                 name_en:"dhhdd ddhdd jd",
-                value: 712,
+                value: 52,
                 color:"#5754E0"
             },
             {
                 id:2,
-                name_uz:"shim",
+                name_uz:"Koylak",
                 name_ru:"ововов вовов",
                 name_en:"dhhdd ddhdd jd",
-                value: 512,
+                value: 112,
                 color:"#623EB9"
             },
             {
                 id:3,
-                name_uz:"shim",
+                name_uz:"Galstuk ",
                 name_ru:"ововов вовов",
                 name_en:"dhhdd ddhdd jd",
-                value: 812,
+                value: 72,
                 color:"#1A1E52"
             },
             {
                 id:4,
-                name_uz:"shim",
+                name_uz:"Oyoq kiyimlar",
                 name_ru:"ововов вовов",
                 name_en:"dhhdd ddhdd jd",
-                value: 412,
+                value: 92,
                 color:"#BF88E2"
             },
         ]
     },
     {
-        id: 1,
-        title_uz: "Umumiy aylanma",
+        id: 3,
+        title_uz: "Mijozlar segmenti",
         title_ru: "Общий оборот",
         title_en: "Total turnover",
         text_uz: "Oxirgi 30 kunlik",
@@ -294,41 +286,33 @@ export const chartsData = [
         product: [
             {
                 id:1,
-                name_uz:"shim",
+                name_uz:"Schet raqamiga tushgan tushum",
                 name_ru:"ововов вовов",
                 name_en:"dhhdd ddhdd jd",
-                value: 712,
+                value: 212,
                 color:"#5754E0"
             },
             {
                 id:2,
-                name_uz:"shim",
+                name_uz:"Qarzdorlarning soni",
                 name_ru:"ововов вовов",
                 name_en:"dhhdd ddhdd jd",
-                value: 512,
+                value: 152,
                 color:"#623EB9"
             },
             {
                 id:3,
-                name_uz:"shim",
+                name_uz:"Naqd olingan pullar",
                 name_ru:"ововов вовов",
                 name_en:"dhhdd ddhdd jd",
-                value: 812,
+                value: 312,
                 color:"#1A1E52"
-            },
-            {
-                id:4,
-                name_uz:"shim",
-                name_ru:"ововов вовов",
-                name_en:"dhhdd ddhdd jd",
-                value: 412,
-                color:"#BF88E2"
             },
         ]
     },
     {
-        id: 1,
-        title_uz: "Umumiy aylanma",
+        id: 4,
+        title_uz: "Harajatlar",
         title_ru: "Общий оборот",
         title_en: "Total turnover",
         text_uz: "Oxirgi 30 kunlik",
@@ -357,35 +341,27 @@ export const chartsData = [
         product: [
             {
                 id:1,
-                name_uz:"shim",
+                name_uz:"Schet raqamiga tushgan tushum",
                 name_ru:"ововов вовов",
                 name_en:"dhhdd ddhdd jd",
-                value: 712,
+                value: 212,
                 color:"#5754E0"
             },
             {
                 id:2,
-                name_uz:"shim",
+                name_uz:"Qarzdorlarning soni",
                 name_ru:"ововов вовов",
                 name_en:"dhhdd ddhdd jd",
-                value: 512,
+                value: 252,
                 color:"#623EB9"
             },
             {
                 id:3,
-                name_uz:"shim",
+                name_uz:"Naqd olingan pullar",
                 name_ru:"ововов вовов",
                 name_en:"dhhdd ddhdd jd",
-                value: 812,
+                value: 312,
                 color:"#1A1E52"
-            },
-            {
-                id:4,
-                name_uz:"shim",
-                name_ru:"ововов вовов",
-                name_en:"dhhdd ddhdd jd",
-                value: 412,
-                color:"#BF88E2"
             },
         ]
     },
