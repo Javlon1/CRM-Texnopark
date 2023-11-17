@@ -129,58 +129,58 @@ export const chartsData = [
         text_uz: "Oxirgi 30 kunlik",
         text_ru: "щлзщлвй взщйцвлйв звйщцлй",
         text_en: "diqwud  dqwduqb  dqwuid",
-        dan:[
+        dan: [
             {
-                id:0,
-                date:"dan",
+                id: 0,
+                date: "dan",
             },
             {
-                id:1,
-                date:2,
+                id: 1,
+                date: 2,
             },
             {
-                id:2,
-                date:3
+                id: 2,
+                date: 3
             }
         ],
-        gacha:[
+        gacha: [
             {
-                id:0,
-                date:"gacha",
+                id: 0,
+                date: "gacha",
             },
             {
-                id:1,
-                date:21,
+                id: 1,
+                date: 21,
             },
             {
-                id:2,
-                date:22
+                id: 2,
+                date: 22
             }
         ],
         product: [
             {
-                id:1,
-                name_uz:"Schet raqamiga tushgan tushum",
-                name_ru:"ововов вовов",
-                name_en:"dhhdd ddhdd jd",
+                id: 1,
+                name_uz: "Schet raqamiga tushgan tushum",
+                name_ru: "ововов вовов",
+                name_en: "dhhdd ddhdd jd",
                 value: 112,
-                color:"#5754E0"
+                color: "#5754E0"
             },
             {
-                id:2,
-                name_uz:"Qarzdorlarning soni",
-                name_ru:"ововов вовов",
-                name_en:"dhhdd ddhdd jd",
+                id: 2,
+                name_uz: "Qarzdorlarning soni",
+                name_ru: "ововов вовов",
+                name_en: "dhhdd ddhdd jd",
                 value: 312,
-                color:"#623EB9"
+                color: "#623EB9"
             },
             {
-                id:3,
-                name_uz:"Naqd olingan pullar",
-                name_ru:"ововов вовов",
-                name_en:"dhhdd ddhdd jd",
+                id: 3,
+                name_uz: "Naqd olingan pullar",
+                name_ru: "ововов вовов",
+                name_en: "dhhdd ddhdd jd",
                 value: 212,
-                color:"#1A1E52"
+                color: "#1A1E52"
             },
         ]
     },
@@ -192,62 +192,62 @@ export const chartsData = [
         text_uz: "Oxirgi 30 kunlik",
         text_ru: "щлзщлвй взщйцвлйв звйщцлй",
         text_en: "diqwud  dqwduqb  dqwuid",
-        dan:[
+        dan: [
             {
-                id:0,
-                date:"dan",
+                id: 0,
+                date: "dan",
             },
             {
-                id:1,
-                date:2,
+                id: 1,
+                date: 2,
             },
         ],
-        gacha:[
+        gacha: [
             {
-                id:0,
-                date:"gacha",
+                id: 0,
+                date: "gacha",
             },
             {
-                id:1,
-                date:31,
+                id: 1,
+                date: 31,
             },
             {
-                id:2,
-                date:21
+                id: 2,
+                date: 21
             }
         ],
         product: [
             {
-                id:1,
-                name_uz:"shim",
-                name_ru:"ововов вовов",
-                name_en:"dhhdd ddhdd jd",
+                id: 1,
+                name_uz: "shim",
+                name_ru: "ововов вовов",
+                name_en: "dhhdd ddhdd jd",
                 value: 52,
-                color:"#5754E0"
+                color: "#5754E0"
             },
             {
-                id:2,
-                name_uz:"Koylak",
-                name_ru:"ововов вовов",
-                name_en:"dhhdd ddhdd jd",
+                id: 2,
+                name_uz: "Koylak",
+                name_ru: "ововов вовов",
+                name_en: "dhhdd ddhdd jd",
                 value: 112,
-                color:"#623EB9"
+                color: "#623EB9"
             },
             {
-                id:3,
-                name_uz:"Galstuk ",
-                name_ru:"ововов вовов",
-                name_en:"dhhdd ddhdd jd",
+                id: 3,
+                name_uz: "Galstuk ",
+                name_ru: "ововов вовов",
+                name_en: "dhhdd ddhdd jd",
                 value: 72,
-                color:"#1A1E52"
+                color: "#1A1E52"
             },
             {
-                id:4,
-                name_uz:"Oyoq kiyimlar",
-                name_ru:"ововов вовов",
-                name_en:"dhhdd ddhdd jd",
+                id: 4,
+                name_uz: "Oyoq kiyimlar",
+                name_ru: "ововов вовов",
+                name_en: "dhhdd ddhdd jd",
                 value: 92,
-                color:"#BF88E2"
+                color: "#BF88E2"
             },
         ]
     },
@@ -259,54 +259,54 @@ export const chartsData = [
         text_uz: "Oxirgi 30 kunlik",
         text_ru: "щлзщлвй взщйцвлйв звйщцлй",
         text_en: "diqwud  dqwduqb  dqwuid",
-        dan:[
+        dan: [
             {
-                id:0,
-                date:"dan",
+                id: 0,
+                date: "dan",
             },
             {
-                id:1,
-                date:2,
+                id: 1,
+                date: 2,
             },
         ],
-        gacha:[
+        gacha: [
             {
-                id:0,
-                date:"gacha",
+                id: 0,
+                date: "gacha",
             },
             {
-                id:1,
-                date:12,
+                id: 1,
+                date: 12,
             },
             {
-                id:2,
-                date:28
+                id: 2,
+                date: 28
             }
         ],
         product: [
             {
-                id:1,
-                name_uz:"Schet raqamiga tushgan tushum",
-                name_ru:"ововов вовов",
-                name_en:"dhhdd ddhdd jd",
+                id: 1,
+                name_uz: "Schet raqamiga tushgan tushum",
+                name_ru: "ововов вовов",
+                name_en: "dhhdd ddhdd jd",
                 value: 212,
-                color:"#5754E0"
+                color: "#5754E0"
             },
             {
-                id:2,
-                name_uz:"Qarzdorlarning soni",
-                name_ru:"ововов вовов",
-                name_en:"dhhdd ddhdd jd",
+                id: 2,
+                name_uz: "Qarzdorlarning soni",
+                name_ru: "ововов вовов",
+                name_en: "dhhdd ddhdd jd",
                 value: 152,
-                color:"#623EB9"
+                color: "#623EB9"
             },
             {
-                id:3,
-                name_uz:"Naqd olingan pullar",
-                name_ru:"ововов вовов",
-                name_en:"dhhdd ddhdd jd",
+                id: 3,
+                name_uz: "Naqd olingan pullar",
+                name_ru: "ововов вовов",
+                name_en: "dhhdd ddhdd jd",
                 value: 312,
-                color:"#1A1E52"
+                color: "#1A1E52"
             },
         ]
     },
@@ -318,51 +318,146 @@ export const chartsData = [
         text_uz: "Oxirgi 30 kunlik",
         text_ru: "щлзщлвй взщйцвлйв звйщцлй",
         text_en: "diqwud  dqwduqb  dqwuid",
-        dan:[
+        dan: [
             {
-                id:0,
-                date:"dan",
+                id: 0,
+                date: "dan",
             },
             {
-                id:1,
-                date:2,
+                id: 1,
+                date: 2,
             },
         ],
-        gacha:[
+        gacha: [
             {
-                id:0,
-                date:"gacha",
+                id: 0,
+                date: "gacha",
             },
             {
-                id:1,
-                date:21,
+                id: 1,
+                date: 21,
             },
         ],
         product: [
             {
-                id:1,
-                name_uz:"Schet raqamiga tushgan tushum",
-                name_ru:"ововов вовов",
-                name_en:"dhhdd ddhdd jd",
+                id: 1,
+                name_uz: "Schet raqamiga tushgan tushum",
+                name_ru: "ововов вовов",
+                name_en: "dhhdd ddhdd jd",
                 value: 212,
-                color:"#5754E0"
+                color: "#5754E0"
             },
             {
-                id:2,
-                name_uz:"Qarzdorlarning soni",
-                name_ru:"ововов вовов",
-                name_en:"dhhdd ddhdd jd",
+                id: 2,
+                name_uz: "Qarzdorlarning soni",
+                name_ru: "ововов вовов",
+                name_en: "dhhdd ddhdd jd",
                 value: 252,
-                color:"#623EB9"
+                color: "#623EB9"
             },
             {
-                id:3,
-                name_uz:"Naqd olingan pullar",
-                name_ru:"ововов вовов",
-                name_en:"dhhdd ddhdd jd",
+                id: 3,
+                name_uz: "Naqd olingan pullar",
+                name_ru: "ововов вовов",
+                name_en: "dhhdd ddhdd jd",
                 value: 312,
-                color:"#1A1E52"
+                color: "#1A1E52"
             },
         ]
+    },
+]
+
+
+export const dataTable = [
+    {
+        id: 1,
+        name: "javlon",
+        phone: 1,
+        comment: "daygd dwayud dayufd",
+        balans: 0
+    },
+    {
+        id: 1,
+        name: "javlon",
+        phone: 1,
+        comment: "daygd dwayud dayufd",
+        balans: 0
+    },
+    {
+        id: 1,
+        name: "javlon",
+        phone: 1,
+        comment: "daygd dwayud dayufd",
+        balans: 0
+    },
+    {
+        id: 1,
+        name: "javlon",
+        phone: 1,
+        comment: "daygd dwayud dayufd",
+        balans: 0
+    },
+    {
+        id: 1,
+        name: "javlon",
+        phone: 1,
+        comment: "daygd dwayud dayufd",
+        balans: 0
+    },
+    {
+        id: 1,
+        name: "javlon",
+        phone: 1,
+        comment: "daygd dwayud dayufd",
+        balans: 0
+    },
+    {
+        id: 1,
+        name: "javlon",
+        phone: 1,
+        comment: "daygd dwayud dayufd",
+        balans: 0
+    },
+    {
+        id: 1,
+        name: "javlon",
+        phone: 1,
+        comment: "daygd dwayud dayufd",
+        balans: 0
+    },
+    {
+        id: 1,
+        name: "javlon",
+        phone: 1,
+        comment: "daygd dwayud dayufd",
+        balans: 0
+    },
+    {
+        id: 1,
+        name: "javlon",
+        phone: 1,
+        comment: "daygd dwayud dayufd",
+        balans: 0
+    },
+    {
+        id: 2,
+        name: "javlon",
+        phone: 1,
+        comment: "daygd dwayud dayufd",
+        balans: 0
+    },
+    {
+        id: 1,
+        name: "jony",
+        phone: 1,
+        comment: "daygd dwayud dayufd",
+        balans: 0
+    },
+    {
+        id: 1,
+        name: "javlon",
+        phone: 2,
+        comment: "b",
+        balans: 0
     },
 ]
