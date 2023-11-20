@@ -113,18 +113,20 @@
                         }
 
                         b {
-                            border-radius: 50%;
                             background-color: transparent;
                             margin-right: 1rem;
-                            border: 1px solid $blue;
                             padding: .2rem;
                             text-align: center;
                             cursor: pointer;
 
                             i {
-                                &::before {
-                                    width: 21px !important;
-                                }
+                                border: 1px solid $blue;
+                                width: 30px;
+                                height: 30px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                border-radius: 50%;
                             }
                         }
                     }
