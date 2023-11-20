@@ -25,23 +25,27 @@
             justify-content: space-between;
             margin: 0 auto;
 
-            &__rate{
+            &__rate {
                 display: flex;
                 align-items: center;
-                .arrow{
+
+                .arrow {
                     margin: 0 .5rem;
-                    i{
+
+                    i {
                         font-size: 1.5rem;
                         font-weight: 600;
                     }
                 }
-                &__items{
+
+                &__items {
                     background-color: #eee;
                     display: flex;
                     align-items: center;
                     border-radius: 1rem;
                     border: 1px solid $blue;
-                    b{
+
+                    b {
                         width: 9rem;
                         padding: 0;
                         margin: 0;
@@ -49,7 +53,8 @@
                         text-align: end;
                         padding: 0 .5rem;
                     }
-                    span{
+
+                    span {
                         height: 40px;
                         width: 3rem;
                         display: flex;
@@ -96,7 +101,7 @@
 
                 &__notification {
                     position: relative;
-                    
+
                     &__list {
                         background-color: $white;
                         position: absolute;
@@ -183,7 +188,53 @@
     }
 }
 
+@media only screen and (max-width: 1300px) {
+    .header {
+        &__topbar {
+            &__container {
+                &__rate {
+                    &__items {
+                        b {
+                            width: 8rem;
+                            font-size: 1rem;
+                            padding: 0 .8rem;
+                        }
+                    }
+                }
+
+                &__right {
+                    width: 330px;
+
+                    &__icon {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .header {
+        &__topbar {
+            &__container {
+                &__rate {
+                    &__items {
+                        b {
+                            width: 7rem;
+                        }
+                    }
+                }
+
+                &__right {
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
+
 .act-noti {
-    transform: translateX(35%) !important;
+    transform: translateX(120px) !important;
     box-shadow: -1px 2px 4px $blue;
 }

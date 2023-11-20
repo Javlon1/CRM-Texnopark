@@ -1,5 +1,5 @@
 @import '../../../../Assets/Sass/Veriables.scss';
- 
+
 .intro {
     width: 100%;
     display: flex;
@@ -16,10 +16,14 @@
 
         &__container {
             width: 90%;
-            display: flex;
             margin: 0 auto;
-            flex-wrap: wrap;
-            justify-content: space-between;
+
+            .jcsb {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding-left: 2rem;
+            }
 
             &__items {
                 margin-top: 30px;
@@ -86,7 +90,6 @@
                                 width: .5rem;
                                 height: .5rem;
                                 border-radius: 100%;
-                                margin-right: .7rem;
                             }
 
                             &__text {
@@ -95,6 +98,89 @@
                                 font-weight: 600;
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+
+    .intro {
+        &__right {
+
+            &__container {
+                .jcsb {
+                    justify-content: space-evenly;
+                }
+
+                &__items {
+                    width: 47%;
+                    height: 370px;
+
+                    &__title {
+                        font-weight: 600;
+                    }
+
+                    &__text {
+                        padding: .3rem 0;
+                    }
+
+                    &__date {
+                        width: 160px;
+                        padding: .1rem 0 .5rem 0;
+
+                        .select {
+                            select {
+                                padding: .2rem 1rem;
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1360px) {
+    .intro {
+        &__right {
+            &__container {
+                &__items {
+                    width: 45%;
+                    height: 360px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .intro {
+        &__right {
+            text-align: center;
+
+            &__container {
+                &__items {
+                    width: 43%;
+                    height: 60%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+
+                    &__date {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+
+                    &__chart {
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
                     }
                 }
             }
