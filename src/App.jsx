@@ -1,14 +1,16 @@
 import { useEffect, useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.scss';
+
 import Loader from './Components/Ui/Loader/Loader';
 import NotFound from './Components/Ui/404/404.jsx';
 import Statistic from './Pages/Statistic/Statistic';
 import LeftBar from './Components/layout/LeftBar/LeftBar';
-import Lid from './Components/Page/Lids/Lids';
 import Client from './Pages/Client/Client';
+import Lid from './Pages/Lid/Lid';
 
 function App() {
+
   // 
   // document.addEventListener('contextmenu', (e) => {
   //   e.preventDefault();

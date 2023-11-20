@@ -1,0 +1,203 @@
+@import "../../../../Assets/Sass/Veriables.scss";
+
+.dragAndDrop {
+    width: 100%;
+    display: flex;
+
+    &__left {
+        width: 300px;
+    }
+
+    &__right {
+        padding-top: 110px;
+        display: flex;
+        flex-grow: 1;
+        padding-bottom: 1rem;
+
+        &__container {
+            width: 95%;
+            margin: 0 auto;
+
+            &__register {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 3rem 0;
+
+                &__btn {
+                    background-color: $blue;
+                    color: $white;
+                    font-weight: 600;
+                    font-style: 1.1rem;
+                    padding: .5rem 1rem;
+                    border: none;
+                    border-radius: .7rem;
+                }
+
+                &__list {
+                    width: 70px;
+                    height: 70px;
+                    box-shadow: 0 0 4px $blue;
+                    border-radius: .7rem;
+                    transition: $transition;
+                    background-color: $white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+
+                    button {
+                        position: absolute;
+                        left: .35rem;
+                        width: 58px;
+                        height: 58px;
+                        border-radius: .6rem;
+                        border: transparent;
+                        background-color: $blue;
+                        color: $white;
+                        font-weight: 600;
+                    }
+
+                    li {
+                        display: none;
+                    }
+
+                    p {
+                        position: absolute;
+                        right: .5rem;
+                        top: .45rem;
+                        width: 55px;
+                        height: 55px;
+                        cursor: pointer;
+                        box-shadow: 0 0 4px $blue;
+                        border-radius: .5rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        transition: 1s all ease;
+
+                        i {
+                            display: none;
+                        }
+                    }
+                }
+
+                &__user {
+                    display: flex;
+                    flex-direction: column;
+                    width: 450px;
+                    position: absolute;
+                    box-shadow: 0 0 6px $blue;
+                    border-bottom-left-radius: .5rem;
+                    background-color: #fff;
+                    height: 80vh;
+                    top: 0;
+                    right: 0;
+                    z-index: 999999;
+                    transform: translateY(-155%);
+                    transition: $transition;
+
+                    &__title {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin: 2.4rem 0;
+                        padding: 0 1rem;
+                        padding-bottom: 1.2rem;
+                        border-bottom: 2px solid $blue;
+
+                        p {
+                            font-size: 24px;
+                            font-weight: 500;
+                            color: $black;
+                        }
+
+                        b {
+                            border-radius: 50%;
+                            background-color: transparent;
+                            margin-right: 1rem;
+                            border: 1px solid $blue;
+                            padding: .2rem;
+                            text-align: center;
+                            cursor: pointer;
+
+                            i {
+                                &::before {
+                                    width: 21px !important;
+                                }
+                            }
+                        }
+                    }
+
+                    &__form {
+                        padding: 0 1rem;
+                        display: flex;
+                        justify-content: space-between;
+                        height: 50%;
+                        flex-direction: column;
+
+                        &__div {
+                            span {
+                                display: block;
+                                font-size: 20px;
+                                font-weight: 400;
+                            }
+
+                            input {
+                                border: 2px solid $blue;
+                                border-radius: .5rem;
+                                width: 90%;
+                                height: 50px;
+                                color: $blue;
+                                font-weight: 700;
+                            }
+                        }
+
+                        button {
+                            margin-top: 2rem;
+                            padding: .7rem 1rem;
+                            border: transparent;
+                            border-radius: .5rem;
+                            background-color: $blue;
+                            color: $white;
+                            width: 90%;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+
+            &__list {
+                width: 200px;
+                background-color: red;
+            }
+        }
+    }
+}
+
+.activRegister {
+    transform: translateY(0%) !important;
+}
+
+.activList {
+    width: 70% !important;
+
+    li {
+        display: block !important;
+    }
+
+    p {
+        display: flex !important;
+        background-color: $white;
+
+        i {
+            border: 2px solid $blue;
+            width: 30px;
+            height: 30px;
+            display: flex !important;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+    }
+}

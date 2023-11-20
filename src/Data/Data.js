@@ -461,3 +461,102 @@ export const dataTable = [
         balans: 0
     },
 ]
+
+export const DragDropData = [
+    {
+        id:1,
+        title_uz:"So‘rovlar uz",
+        title_ru:"So‘rovlar ru",
+        items:[
+            {
+                id:1,
+                name:"Mukhammadjonov javlon",
+                phone:905251243,
+            },
+            {
+                id:2,
+                name:"Mukhammadjonov javlon",
+                phone:905251243,
+            },
+            {
+                id:3,
+                name:"Mukhammadjonov javlon",
+                phone:905251243,
+            },
+            {
+                id:4,
+                name:"Mukhammadjonov javlon",
+                phone:905251243,
+            },
+            {
+                id:5,
+                name:"Mukhammadjonov javlon",
+                phone:905251243,
+            },
+        ],
+    },
+    {
+        id:2,
+        title_uz:"Kutish uz",
+        title_ru:"Kutish ru",
+        items:[
+            {
+                id:6,
+                name:"Mukhammadjonov javlon",
+                phone:905251243,
+            },
+            {
+                id:7,
+                name:"Mukhammadjonov javlon",
+                phone:905251243,
+            },
+            {
+                id:8,
+                name:"Mukhammadjonov javlon",
+                phone:905251243,
+            },
+            {
+                id:9,
+                name:"Mukhammadjonov javlon",
+                phone:905251243,
+            },
+            {
+                id:10,
+                name:"Mukhammadjonov javlon",
+                phone:905251243,
+            },
+        ],
+    },
+    {
+        id:3,
+        title_uz:"To‘plam uz",
+        title_ru:"To‘plam ru",
+        items:[
+            {
+                id:11,
+                name:"Mukhammadjonov javlon",
+                phone:905251243,
+            },
+            {
+                id:12,
+                name:"Mukhammadjonov javlon",
+                phone:905251243,
+            },
+            {
+                id:13,
+                name:"Mukhammadjonov javlon",
+                phone:905251243,
+            },
+            {
+                id:14,
+                name:"Mukhammadjonov javlon",
+                phone:905251243,
+            },
+            {
+                id:15,
+                name:"Mukhammadjonov javlon",
+                phone:905251243,
+            },
+        ],
+    },
+]
