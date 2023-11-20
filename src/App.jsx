@@ -47,17 +47,21 @@ function App() {
 
   return (
     <div className="App">
-      <LeftBar />
+      <div className="items">
+        <LeftBar />
 
-      <Routes>
+        <Routes>
 
-        <Route path='*' element={<NotFound />} />
-        <Route path='/' element={<Statistic />} />
-        <Route path='/lid' element={<Lid />} />
-        <Route path='/customer' element={<Client />} />
+          <Route path='*' element={<NotFound />} />
+          <Route path='/' element={<Statistic />} />
+          <Route path='/lid' element={<Lid />} />
+          <Route path='/customer' element={<Client />} />
 
-      </Routes>
-
+        </Routes>
+      </div>
+      <div className='mob'>
+        <h2>не возможно управлять с вашего устройсто</h2>
+      </div>
     </div>
   );
 }
