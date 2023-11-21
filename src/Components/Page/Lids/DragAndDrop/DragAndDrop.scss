@@ -195,12 +195,26 @@
                         height: 500px;
                         overflow-y: scroll;
                         padding: 0 1rem;
+                        padding-bottom: 1rem;
 
                         &__item {
                             margin-top: 1rem;
                             border-radius: .5rem;
                             padding: .5rem 1rem;
                             box-shadow: 0 0 3px $black;
+
+                            p {
+                                margin: 0;
+                                padding: 0;
+                                font-size: 1.2rem;
+                                font-weight: 600;
+                            }
+
+                            a {
+                                font-size: .9rem;
+                                font-weight: 600;
+                                color: #4D4AEA;
+                            }
                         }
                     }
                 }
