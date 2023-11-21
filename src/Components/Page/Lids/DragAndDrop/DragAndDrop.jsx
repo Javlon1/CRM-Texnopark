@@ -139,7 +139,7 @@ export default function DragAndDrop() {
                         <DragDropContext onDragEnd={handleDragAndDrop}>
                             {
                                 stores?.map((e, i) => (
-                                    <Droppable key={i} droppableId={e.id}>
+                                    <Droppable key={i} droppableId={`${e.id}`}>
                                         {(provided) => (
                                             <div className='list__item' {...provided.droppableProps} ref={provided.innerRef}>
                                                 <div className="list__item__title">
