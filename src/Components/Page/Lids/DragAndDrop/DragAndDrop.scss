@@ -22,7 +22,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                margin: 3rem 0;
+                margin: 1.5rem 0;
 
                 &__btn {
                     background-color: $blue;
@@ -214,6 +214,41 @@
                                 font-size: .9rem;
                                 font-weight: 600;
                                 color: #4D4AEA;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .dragAndDrop {
+        &__right {
+            &__container {
+                .list {
+                    &__item {
+                        width: 31%;
+
+                        &__title {
+                            h3 {
+                                font-size: 1.5rem;
+                                font-weight: 600;
+                            }
+                        }
+
+                        &__list {
+                            &__item {
+                                p {
+                                    font-size: 1rem;
+                                    font-weight: 500;
+                                }
+
+                                a {
+                                    font-weight: 500;
+                                    color: #4D4AEA;
+                                }
                             }
                         }
                     }
