@@ -139,7 +139,7 @@ export default function DragAndDrop() {
                         <DragDropContext onDragEnd={handleDragAndDrop}>
                             {
                                 stores?.map((e, i) => (
-                                    <Droppable droppableId={e.id}>
+                                    <Droppable key={i} droppableId={e.id}>
                                         {(provided) => (
                                             <div className='list__item' {...provided.droppableProps} ref={provided.innerRef}>
                                                 <div className="list__item__title">
@@ -148,8 +148,8 @@ export default function DragAndDrop() {
                                                 <div className="list__item__list">
                                                     {
                                                         e.items?.map((item, index) => (
-                                                            <div className='list__item__list__item'>
-                                                                <Draggable draggableId={item.id} index={index} key={item.id}>
+                                                            <div key={item.id} className='list__item__list__item'>
+                                                                <Draggable draggableId={`${item.id}`} index={index}>
                                                                     {(provided) => (
                                                                         <div
                                                                             className="item-container"
