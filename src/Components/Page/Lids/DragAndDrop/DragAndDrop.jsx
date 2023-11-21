@@ -4,46 +4,83 @@ import { useEffect, useState } from 'react'
 import Header from '../../../layout/Header/Header'
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd"
 import { DragDropData } from '../../../../Data/Data'
+import { Link } from 'react-router-dom'
+import { Context } from '../../../../Context/Context'
+
 
 export default function DragAndDrop() {
+    const { lan } = React.useContext(Context)
     const [reg, setReg] = useState(false)
     const [list, setList] = useState(false)
-    const [dragData, setDragData] = useState([])
+
+    const [stores, setStores] = useState([]);
 
     useEffect(() => {
         const getCounteries = async () => {
             await fetch("https://63c2c490b0c286fbe5f347e9.mockapi.io/drag")
                 .then(res => res.json())
-                .then(data => setDragData(data))
+                .then(data => setStores(DragDropData))
                 .catch(error => console.error(error.message))
         }
         getCounteries()
     }, [])
 
-    // const [currentCrad, setCurrentCrad] = useState(null)
 
-    const headlerDragDrop = (results) => {
-
+    const handleDragAndDrop = (results) => {
         const { source, destination, type } = results;
 
-        if (!destination) {
+        if (!destination) return;
+
+        if (
+            source.droppableId === destination.droppableId &&
+            source.index === destination.index
+        )
             return;
-        }
-        if (source.droppableId === destination.droppableId && source.index === destination.index) {
-            return;
-        }
+
         if (type === "group") {
+            const reorderedStores = [...stores];
 
-            const reorderedDragData = [...dragData];
+            const storeSourceIndex = source.index;
+            const storeDestinatonIndex = destination.index;
 
-            const sourceIndex = source.index;
-            const destinationIndex = destination.index;
+            const [removedStore] = reorderedStores.splice(storeSourceIndex, 1);
+            reorderedStores.splice(storeDestinatonIndex, 0, removedStore);
 
-            const [removedDragData] = reorderedDragData.splice(sourceIndex, 1)
-            reorderedDragData.splice(destinationIndex, 0, removedDragData)
-            return setDragData(reorderedDragData)
+            return setStores(reorderedStores);
         }
-    }
+        const itemSourceIndex = source.index;
+        const itemDestinationIndex = destination.index;
+
+        const storeSourceIndex = stores.findIndex(
+            (store) => store.id === source.droppableId
+        );
+        const storeDestinationIndex = stores.findIndex(
+            (store) => store.id === destination.droppableId
+        );
+
+        const newSourceItems = [...stores[storeSourceIndex].items];
+        const newDestinationItems =
+            source.droppableId !== destination.droppableId
+                ? [...stores[storeDestinationIndex].items]
+                : newSourceItems;
+
+        const [deletedItem] = newSourceItems.splice(itemSourceIndex, 1);
+        newDestinationItems.splice(itemDestinationIndex, 0, deletedItem);
+
+        const newStores = [...stores];
+
+        newStores[storeSourceIndex] = {
+            ...stores[storeSourceIndex],
+            items: newSourceItems,
+        };
+        newStores[storeDestinationIndex] = {
+            ...stores[storeDestinationIndex],
+            items: newDestinationItems,
+        };
+
+        setStores(newStores);
+    };
+
 
     return (
         <section className='dragAndDrop'>
@@ -98,37 +135,49 @@ export default function DragAndDrop() {
                             </form>
                         </div>
                     </div>
-                    <DragDropContext onDragEnd={headlerDragDrop}>
-                        <div>
-                            <Droppable
-                                droppableId='ROOT'
-                                type='group'
-                            >
-                                {(provided) => (
-                                    <div {...provided.droppableProps} ref={provided.innerRef} className='dragAndDrop__right__container__list'>
-                                        <div>
-                                            {
-                                                dragData?.map((card, index) => (
-                                                    <Draggable draggableId={card.id} key={card.id} index={index}>
-                                                        {(provided) => (
-                                                            <div
-                                                                {...provided.dragHandleProps}
-                                                                {...provided.draggableProps}
-                                                                ref={provided.innerRef}
-                                                            >
-                                                                <h3>{card.name}</h3>
+                    <div className='list'>
+                        <DragDropContext onDragEnd={handleDragAndDrop}>
+                            {
+                                stores?.map((e, i) => (
+                                    <Droppable droppableId={e.id}>
+                                        {(provided) => (
+                                            <div className='list__item' {...provided.droppableProps} ref={provided.innerRef}>
+                                                <div className="list__item__title">
+                                                    <h3>{e[`title_${lan}`]}</h3>
+                                                </div>
+                                                <div className="list__item__list">
+                                                    {
+                                                        e.items?.map((item, index) => (
+                                                            <div className='list__item__list__item'>
+                                                                <Draggable draggableId={item.id} index={index} key={item.id}>
+                                                                    {(provided) => (
+                                                                        <div
+                                                                            className="item-container"
+                                                                            {...provided.dragHandleProps}
+                                                                            {...provided.draggableProps}
+                                                                            ref={provided.innerRef}
+                                                                        >
+                                                                            <h4>{item.name}</h4>
+                                                                            <Link
+                                                                                to={`tel:${item.phone}`}
+                                                                            >
+                                                                                {item.phone}
+                                                                            </Link>
+                                                                        </div>
+                                                                    )}
+                                                                </Draggable>
                                                             </div>
-                                                        )}
-                                                    </Draggable>
-                                                ))
-                                            }
-                                        </div>
-                                        {provided.placeholder}
-                                    </div>
-                                )}
-                            </Droppable>
-                        </div>
-                    </DragDropContext>
+                                                        ))
+                                                    }
+                                                    {provided.placeholder}
+                                                </div>
+                                            </div>
+                                        )}
+                                    </Droppable>
+                                ))
+                            }
+                        </DragDropContext>
+                    </div>
                 </div>
             </div>
         </section>
