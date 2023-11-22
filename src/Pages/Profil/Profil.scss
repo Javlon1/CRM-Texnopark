@@ -1,0 +1,22 @@
+@import "../../Assets/Sass/Veriables.scss";
+
+.profil {
+    width: 100%;
+    display: flex;
+
+    &__left {
+        width: 300px;
+    }
+
+    &__right {
+        padding-top: 150px;
+        display: flex;
+        flex-grow: 1;
+        padding-bottom: 1rem;
+
+        &__container {
+            width: 95%;
+            margin: 0 auto;
+        }
+    }
+}

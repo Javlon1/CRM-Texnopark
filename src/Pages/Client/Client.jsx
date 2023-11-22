@@ -13,7 +13,7 @@ export default function Client() {
             name: "Id",
             selector: row => row.id,
             sortable: true
-        },
+        }, 
         {
             name: "Name",
             selector: row => row.name,
@@ -46,6 +46,7 @@ export default function Client() {
         })
         setFilter(newData)
     }
+    
     const tableStyle = {
         headCells: {
             style: {

@@ -8,6 +8,7 @@ import Statistic from './Pages/Statistic/Statistic';
 import LeftBar from './Components/layout/LeftBar/LeftBar';
 import Client from './Pages/Client/Client';
 import Lid from './Pages/Lid/Lid';
+import Profil from './Pages/Profil/Profil';
 
 function App() {
 
@@ -56,6 +57,7 @@ function App() {
           <Route path='/' element={<Statistic />} />
           <Route path='/lid' element={<Lid />} />
           <Route path='/customer' element={<Client />} />
+          <Route path='/profil' element={<Profil />} />
 
         </Routes>
       </div>
