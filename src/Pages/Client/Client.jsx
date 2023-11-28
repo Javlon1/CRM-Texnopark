@@ -2,61 +2,54 @@ import * as React from 'react'
 import { useState } from 'react';
 import DataTable from 'react-data-table-component';
 import Header from '../../Components/layout/Header/Header';
-import { dataTable } from '../../Data/Data';
 import './Client.scss'
 
 export default function Client() {
-    const [data, setData] = useState(dataTable)
+    const [filterText, setFilterText] = useState('');
+
 
     const columns = [
         {
-            name: "Id",
-            selector: row => row.id,
-            sortable: true
-        }, 
-        {
-            name: "Name",
-            selector: row => row.name,
-            sortable: true
+            name: 'First Name',
+            selector: 'firstName',
+            sortable: true,
         },
         {
-            name: "Phone",
-            selector: row => row.phone,
-            sortable: true
+            name: 'Last Name',
+            selector: 'lastName',
+            sortable: true,
         },
         {
-            name: "Comment",
-            selector: row => row.comment,
-            sortable: true
+            name: 'Age',
+            selector: 'age',
+            sortable: true,
         },
-        {
-            name: "Balans",
-            selector: row => row.balans,
-            sortable: true
-        },
-
     ];
 
-    const [filter, setFilter] = useState(data)
+    const data = [
+        { id: 1, firstName: 'John', lastName: 'Doe', age: 30 },
+        { id: 2, firstName: 'Jane', lastName: 'Doe', age: 25 },
+        { id: 3, firstName: 'John', lastName: 'Doe', age: 30 },
+        { id: 4, firstName: 'Jane', lastName: 'Doe', age: 25 },
+        { id: 5, firstName: 'John', lastName: 'Doe', age: 30 },
+        { id: 6, firstName: 'Jane', lastName: 'Doe', age: 25 },
+        { id: 7, firstName: 'John', lastName: 'Doe', age: 30 },
+        { id: 8, firstName: 'Jane', lastName: 'Doe', age: 25 },
 
-    const filterHandler = (e) => {
-        const values = e.target.value.toLowerCase()
-        const newData = data.filter(row => {
-            return row.name.toLowerCase().includes(values)
-        })
-        setFilter(newData)
-    }
-    
-    const tableStyle = {
-        headCells: {
-            style: {
-                fontSize: "1.2rem",
-                fontWeight: "600",
-                backgroundColor: "#1B1F54",
-                color: "#fff",
-            }
-        }
-    }
+        { id: 9, firstName: 'John', lastName: 'Doe', age: 30 },
+        { id: 10, firstName: 'Jane', lastName: 'Doe', age: 25 },
+        { id: 11, firstName: 'John', lastName: 'Doe', age: 30 },
+        { id: 12, firstName: 'Jane', lastName: 'Doe', age: 25 },
+        { id: 13, firstName: 'John', lastName: 'Doe', age: 30 },
+        { id: 14, firstName: 'Jane', lastName: 'Doe', age: 25 },
+        { id: 15, firstName: 'John', lastName: 'Doe', age: 30 },
+        { id: 16, firstName: 'Jane', lastName: 'Doe', age: 25 },
+    ];
+
+    const filteredData = data.filter(item =>
+        `${item.firstName} ${item.lastName} ${item.age}`.toLowerCase().includes(filterText.toLowerCase())
+    );
+
     return (
         <section className='client'>
             <Header />
@@ -64,17 +57,20 @@ export default function Client() {
             <div className='client__right'>
                 <div className="client__right__container">
                     <div className='client__right__container__inp'>
-                        <span>Search:</span>
-                        <input type="text" onChange={filterHandler} />
+                        <input
+                            type="text"
+                            placeholder="Search"
+                            value={filterText}
+                            onChange={(e) => setFilterText(e.target.value)}
+                        />
                     </div>
                     <DataTable
-                        customStyles={tableStyle}
                         columns={columns}
-                        data={filter}
-                        fixedHeader
+                        data={filteredData}
                         pagination
-                        highlightOnHover
-                    ></DataTable>
+                        paginationPerPage={5}
+                        paginationRowsPerPageOptions={[5, 10, 20]}
+                    />
                 </div>
             </div>
         </section>

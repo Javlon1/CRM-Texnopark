@@ -13,7 +13,7 @@
         display: flex;
         flex-grow: 1;
         padding-bottom: 1rem;
- 
+
         &__container {
             width: 95%;
             margin: 0 auto;
@@ -22,12 +22,16 @@
                 display: flex;
                 align-items: center;
                 justify-content: end;
-                span{
+
+                span {
                     font-size: 1.2rem;
                     font-weight: 600;
                     margin-right: .5rem;
                 }
-                input{
+
+                input {
+                    border: 2px solid $blue;
+                    border-radius: 1rem;
                     font-size: 1.2rem;
                     font-weight: 600;
                     color: $black;
