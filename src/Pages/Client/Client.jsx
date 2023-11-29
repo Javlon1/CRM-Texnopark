@@ -112,14 +112,15 @@ export default function Client() {
                             </form>
                         </div>
                     </div>
-
-                    <DataTable
-                        columns={columns}
-                        data={filteredData}
-                        pagination
-                        paginationPerPage={5}
-                        paginationRowsPerPageOptions={[5, 10, 20]}
-                    />
+                    <div className='table'>
+                        <DataTable
+                            columns={columns}
+                            data={filteredData}
+                            pagination
+                            paginationPerPage={5}
+                            paginationRowsPerPageOptions={[5, 10, 20]}
+                        />
+                    </div>
                 </div>
             </div>
         </section>

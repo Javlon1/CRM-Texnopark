@@ -105,6 +105,15 @@ export const NotificationData = [
         text_ru: "равыаы",
         text_en: "gfgfgf",
     },
+    {
+        id: 3,
+        title_uz: "Maxsulot - Sement 600",
+        title_ru: "взцйхвй",
+        title_en: "wuqidw",
+        text_uz: "Yangi Sement 600 maxsuloti qoshildi, narxlarni o'rnatish uchun shu yerga bosing",
+        text_ru: "равыаы",
+        text_en: "gfgfgf",
+    },
 ]
 
 
