@@ -12,8 +12,6 @@ export default function Profil() {
                     <div className="profil__right__container__info">
                         <b>javlon</b>
                         <p>{`[id:${632}]`}</p>
-
-                        
                     </div>
                 </div>
             </div>

@@ -17,6 +17,13 @@
         &__container {
             width: 95%;
             margin: 0 auto;
+            &__info{
+                box-shadow: 0 0 4px #afaeae;
+                width: 400px;
+                height: 265px;
+                padding: 1rem;
+                border-radius: .5rem;
+            }
         }
     }
 }

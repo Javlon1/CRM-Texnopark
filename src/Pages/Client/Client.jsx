@@ -6,6 +6,8 @@ import './Client.scss'
 
 export default function Client() {
     const [filterText, setFilterText] = useState('');
+    const [reg, setReg] = useState(false)
+    const [list, setList] = useState(false)
 
 
     const columns = [
@@ -56,14 +58,61 @@ export default function Client() {
             <div className="client__left"></div>
             <div className='client__right'>
                 <div className="client__right__container">
-                    <div className='client__right__container__inp'>
-                        <input
-                            type="text"
-                            placeholder="Search"
-                            value={filterText}
-                            onChange={(e) => setFilterText(e.target.value)}
-                        />
+                    <div className="client__right__container__register">
+                        <ul className={list ? "client__right__container__register__list activList" : "client__right__container__register__list"}>
+                            <button onClick={() => {
+                                setList(!list)
+                            }}>
+                                <i className="bi bi-arrow-left-right"></i>
+                            </button>
+                            <li className='client__right__container__register__list__item'>
+                                <div className='client__right__container__register__list__item__inp'>
+                                    <input
+                                        type="text"
+                                        placeholder="Search"
+                                        value={filterText}
+                                        onChange={(e) => setFilterText(e.target.value)}
+                                    />
+                                </div>
+                            </li>
+                            <p onClick={() => {
+                                setList(!list)
+                            }}>
+                                <i className="bi bi-x-lg"></i>
+                            </p>
+                        </ul>
+                        <button onClick={() => {
+                            setReg(!reg)
+                        }} className="client__right__container__register__btn">
+                            + Yangi mijoz qo‘shish
+                        </button>
+                        <div className={reg ? "client__right__container__register__user activRegister" : "client__right__container__register__user"}>
+                            <div className='client__right__container__register__user__title'>
+                                <p>Yangi hodim qo‘shish</p>
+                                <b onClick={() => {
+                                    setReg(false)
+                                }}>
+                                    <i className="bi bi-x-lg"></i>
+                                </b>
+                            </div>
+                            <form className='client__right__container__register__user__form' action="">
+                                <div className='client__right__container__register__user__form__div'>
+                                    <span>name</span>
+                                    <input type="text" required />
+                                </div>
+                                <div className='client__right__container__register__user__form__div'>
+                                    <span>surname</span>
+                                    <input type="text" required />
+                                </div>
+                                <div className='client__right__container__register__user__form__div'>
+                                    <span>phone</span>
+                                    <input type="text" required />
+                                </div>
+                                <button type='submit'>Yuborish</button>
+                            </form>
+                        </div>
                     </div>
+
                     <DataTable
                         columns={columns}
                         data={filteredData}
