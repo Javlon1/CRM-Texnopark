@@ -9,6 +9,7 @@ import LeftBar from './Components/layout/LeftBar/LeftBar';
 import Client from './Pages/Client/Client';
 import Lid from './Pages/Lid/Lid';
 import Profil from './Pages/Profil/Profil';
+import { Finance } from './Pages/Finance/Finance';
 
 function App() {
 
@@ -58,6 +59,7 @@ function App() {
           <Route path='/lid' element={<Lid />} />
           <Route path='/customer' element={<Client />} />
           <Route path='/profil' element={<Profil />} />
+          <Route path='/finance' element={<Finance />} />
 
         </Routes>
       </div>

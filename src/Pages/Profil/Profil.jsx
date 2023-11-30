@@ -5,8 +5,6 @@ import Header from '../../Components/layout/Header/Header'
 
 export default function Profil() {
     const [filterText, setFilterText] = useState('');
-    const [reg, setReg] = useState(false)
-    const [list, setList] = useState(false)
 
 
     const columns = [

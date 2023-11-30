@@ -23,7 +23,7 @@ export default function Header() {
             <div className="header__topbar">
                 <div className="header__topbar__container">
                     {
-                        rateData?.map((e,i) => (
+                        rateData?.map((e, i) => (
                             <div key={i} className="header__topbar__container__rate">
                                 <div className="header__topbar__container__rate__items">
                                     <b>{e.usd}</b>
@@ -86,7 +86,12 @@ export default function Header() {
                                 </ul>
                             </div>
                         </div>
-                        <Link to="/profil" className='header__topbar__container__right__icon'>
+                        <Link to="/profil" className='header__topbar__container__right__icon'
+                            onClick={() => {
+                                setMenu(1)
+                                sessionStorage.setItem('menu', 1)
+                            }}
+                        >
                             <i className="bi bi-person-fill"></i>
                         </Link>
                         <Language />

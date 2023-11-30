@@ -89,21 +89,6 @@ export default function DragAndDrop() {
             <div className="dragAndDrop__right">
                 <div className="dragAndDrop__right__container">
                     <div className="dragAndDrop__right__container__register">
-                        <ul className={list ? "dragAndDrop__right__container__register__list activList" : "dragAndDrop__right__container__register__list"}>
-                            <button onClick={() => {
-                                setList(!list)
-                            }}>
-                                <i className="bi bi-arrow-left-right"></i>
-                            </button>
-                            <li className='dragAndDrop__right__container__register__list__item'>
-                                hh
-                            </li>
-                            <p onClick={() => {
-                                setList(!list)
-                            }}>
-                                <i className="bi bi-x-lg"></i>
-                            </p>
-                        </ul>
                         <button onClick={() => {
                             setReg(!reg)
                         }} className="dragAndDrop__right__container__register__btn">
