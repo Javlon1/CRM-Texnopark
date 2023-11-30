@@ -64,14 +64,6 @@ export const HeaderData = [
         nav_en: 'Employees',
         icon: "bi bi-person-circle",
     },
-    {
-        id: 7,
-        link: '/setting',
-        nav_uz: 'Sozlamalar',
-        nav_ru: 'Настройки',
-        nav_en: 'Settings',
-        icon: "bi bi-gear-fill",
-    },
 ]
 
 export const Lang = [
