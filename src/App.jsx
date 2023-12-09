@@ -10,6 +10,9 @@ import Client from './Pages/Client/Client';
 import Lid from './Pages/Lid/Lid';
 import Profil from './Pages/Profil/Profil';
 import { Finance } from './Pages/Finance/Finance';
+import Employees from './Pages/Employees/Employees';
+import Basement from './Pages/Basement/Basement';
+import Expense from './Pages/Expense/Expense';
 
 function App() {
 
@@ -33,7 +36,7 @@ function App() {
   // };
   //
 
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(false)
 
   useEffect(() => {
     const getCounteries = async () => {
@@ -60,6 +63,9 @@ function App() {
           <Route path='/customer' element={<Client />} />
           <Route path='/profil' element={<Profil />} />
           <Route path='/finance' element={<Finance />} />
+          <Route path='/expense' element={<Expense />} />
+          <Route path='/warehouse' element={<Basement />} />
+          <Route path='/employees' element={<Employees />} />
 
         </Routes>
       </div>

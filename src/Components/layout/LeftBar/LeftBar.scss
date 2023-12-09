@@ -48,11 +48,12 @@
                     right: 0;
                     transition: 1s all ease;
                     box-shadow: 1px 1px 4px $blue;
-
+                    background-color: #fff;
+                    
                     &__item {
                         transition: $transition;
                         border-radius: $radius;
-
+                        
                         a {
                             transition: 1s all ease;
                             color: transparent;
